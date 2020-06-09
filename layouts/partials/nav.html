@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md bg-dark">
+
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 mx-5">
+
+    <ul class="navbar-nav mr-auto nav-font">
+
+     {{ $currentPage := . }}
+
+     {{ range .Site.Menus.main }}
+     {{ $active := "" }}
+
+     {{ if eq $currentPage.Title .Name }}
+     
+     {{ $active = "nav-link-active" }}
+
+     {{ else }}
+
+     {{ end }}
+
+     <li  class="nav-item ">
+
+      <a href="{{ .URL | relLangURL }}" id="c-a" class="nav-link {{ $active }}">{{ .Name }}</a>
+      
+    </li>
+
+    
+    {{ end }}
+
+  </ul>
+</div>
+</nav>
+
