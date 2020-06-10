@@ -36,12 +36,17 @@ menu:
     - name: Tehtud tööd
       identifier: tehtudtood
       url: /tehtudtood/
-      weight: 6   
+      weight: 6 
+        
+    - name: Filamendid
+      identifier: filamendid
+      url: /filamendid/
+      weight: 7 
 
     - name: Kontakt
       identifier: kontakt
       url: /kontakt/
-      weight: 7
+      weight: 8
 
 params:
   showActiveNav: true 

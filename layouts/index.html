@@ -1,18 +1,11 @@
 {{ define "main" }}
-<div class="row p-5 justify-content-center">
-	<div class=" c-custom">
-		<div class="wrapper p-5">
-			<div class="title">
-				<h1 id="my-h1">{{ $.Page.Title }}</h1>
-			</div>
-			<div class="content">
-				{{ with .Content }}{{ . }}
-				
-				{{ else }}
-				<h1>{{ .Site.Title }} THERE IS NO CONTENT IN _INDEX</h1>
-				<!-- <p class="font-125">{{ .Site.Params.homeText | markdownify }}</p> -->
-				{{ end }}
-			</div>
+<div class="row">
+	<div class="wrapper">
+		<h1>{{ $.Page.Title }}</h1>
+		<div class="content">
+			{{ with .Content }}{{ . }}
+			
+			{{ end }}
 		</div>
 	</div>
 </div>
