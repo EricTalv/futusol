@@ -3,7 +3,7 @@ title: "Toetused"
 ---
 
 
-![EU, Eesti Tuleviku heaks, Enterprise Estonia](/img/toetused.jpg "Logo Title Text 1")
+![EU, Eesti Tuleviku heaks, Enterprise Estonia](/img/toetused.jpg)
 
 Projekti EU52781 “3D printimine”  rahastas EAS summas 15 000.- omafinantseering 6296.-
 

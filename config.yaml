@@ -12,12 +12,7 @@ menu:
       identifier: futusol
       url: /
       weight: 1
-
-    - name: E-Pood
-      identifier: epood
-      url: /epood/
-      weight: 2
-
+   
     - name: Toetused
       identifier: toetused
       url: /toetused/
