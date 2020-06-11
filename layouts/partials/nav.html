@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mx-auto">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <img class="navbar-brand" style="width: 140px;" src="img/futusollogo.png" alt="">
 
-    <div class="collapse navbar-collapse " id="navbarNav">
+   
+
+    <div class="collapse navbar-collapse pr-5 mr-5" id="navbarNav">
       <ul class="navbar-nav nav text-uppercase">
          <li class="nav-item active">
               <a class="nav-link" href="#futusol" data-toggle="tab"><h5>Futusol</h5></a>
@@ -24,7 +24,7 @@
 </nav>
 
 <header>
-	<div class="view bg-img">
+	<div class="view bg-img" style="margin-top: 1px;">
 		<div class="h-100 d-flex justify-content-center align-items-center flex-column">
     
       <main role="main" class="container text-white text-center">
@@ -47,18 +47,24 @@
             </div>
         </div>
       </main>
-
 			<div class="lead text-white font-weight-bold text-center my-5" style="width: 41%;"><u><a class="text-reset" href="https://futusol.voog.com/">Meie E-Pood Asub Siin</a></u></div>
 		</div>
-	</div>
+  </div>
+
+
 </header>
 
-<p style="width: 50%;" class="lead text-center mx-auto">Futusol OÜ alustas tegevust 2018 aastal ning on arenev ettevõte. Põhitegevuseks on 3D printimine ja 3D scanneerimine. Oleme Fiberlogy  filamentide esindajad Eestis.</p>
+<div class="w-100 fixed-bottom ">
 
-<div class="w-100 fixed-bottom">
-  <img src="img/EAS.png"  alt="toetused" class="bg-white" style="width: 10%">
+    <img src="img/EAS.png"  alt="toetused" class="example-popover myhover" data-toggle="popover" title="EAS" data-content="
+ATV jooksev Väiketoetus uudsete lahenduste
+väljatöötamiseks ja elluviimiseks sotsiaalvaldkonnas
+(hoolekandeteenused) - 12.06.2018-31.12.2019
+Proteeside ning ortooside tootmise digitaliseerimine.
+Kogumaksumus (EUR): 54 024,62
+Omafinantseeringu summa (EUR): 14 024,62" style="width: 7%">
+
 </div>
-
 
 
 <style>
@@ -69,7 +75,9 @@ header,
   height: 700px;
 }
 
-
+.myhover:hover {
+  cursor: pointer;
+}
 
 .bg-img {
 	background-image: url('img/background.jpg');
