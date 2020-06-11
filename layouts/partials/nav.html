@@ -8,7 +8,9 @@
       <ul class="navbar-nav">
         {{ range .Site.Menus.main }}
           <li class="nav-item">
-            <a href="{{ .URL | relLangURL }}" class="nav-link">{{ .Name }}</a>
+            <a href="{{ .URL | relLangURL }}" class="nav-link">
+              <h6 class="text-uppercase">{{ .Name }}</h6>
+            </a>
           </li>
         {{ end }}
       </ul>

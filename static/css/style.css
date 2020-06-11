@@ -2,7 +2,6 @@
   display: block!important;
 }
 
-
 @media (min-width: 768px){
     .navbar-nav{
         float:none;

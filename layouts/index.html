@@ -1,12 +1,29 @@
 {{ define "main" }}
-<div class="row">
-	<div class="wrapper">
-		<h1>{{ $.Page.Title }}</h1>
-		<div class="content">
-			{{ with .Content }}{{ . }}
-			
-			{{ end }}
+
+<header>
+	<div class="view bg-img">
+		<div class="h-100 d-flex justify-content-center align-items-center flex-column">
+			<h1 class="title text-white font-weight-bold">{{ .Params.Subtitle }}</h1>
+			<div class="lead text-white text-center" style="width: 41%;">{{ .Content }}</div>
 		</div>
 	</div>
-</div>
+</header>
+
+<style>
+html,
+body,
+header,
+.view {
+  height: 90%;
+}
+
+
+.bg-img {
+	background-image: url('img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: fill;
+}
+
+</style>
+
 {{ end }}
