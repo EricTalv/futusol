@@ -1,4 +1,0 @@
----
-title : "Filamendid"
-type: filamendid
----
