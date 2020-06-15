@@ -3,65 +3,14 @@ languageCode: en-us
 title: Futusol
 DefaultContentLanguage: ee
 
-# See https://feathericons.com/
-# The value of pre is the icon name
-
 menu:
   main:
     - name: Futusol
       identifier: futusol
       url: /
       weight: 1
-   
-    - name: Toetused
-      identifier: toetused
-      url: /toetused/
-      weight: 3
-
-    - name: Tutvustus
-      identifier: tutvustus
-      url: /tutvustus/
-      weight: 4
-
-    - name: Teenused
-      identifier: teenused
-      url: /teenused/
-      weight: 5
-
-    - name: Tehtud tööd
-      identifier: tehtudtood
-      url: /tehtudtood/
-      weight: 6 
-        
-    - name: Filamendid
-      identifier: filamendid
-      url: /filamendid/
-      weight: 7 
-
-    - name: Kontakt
-      identifier: kontakt
-      url: /kontakt/
-      weight: 8
-
 params:
   showActiveNav: true 
   footerText: Copyright © 2020 Futusol. Kõik õigused kaitstud.
-  contact:
-    title: Kontakt
-    form:
-      name:
-        text: Nimi
-        error: Palun sisestage oma nimi
-      email:
-        text: Email Aadress
-        error: Palun sisestage oma meili aadress
-      message:
-        text: Sõnum
-        error: Palun sisestage oma sõnum
-      button:
-        text: Saada
-  email: yourformspree@emailhereplease.com
-
-          
 
 
