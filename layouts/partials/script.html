@@ -35,3 +35,87 @@
   });
 
 </script>
+
+
+<script>
+
+// -----------------START OF STYLING ELEMENT-----------------
+var btns = document.getElementsByClassName("item");
+
+for (var i = 0; i < btns.length; i++) {
+
+  btns[i].addEventListener("click", function() {
+
+    var siblings = this.parentNode.childNodes
+    siblings.forEach(function(element) {
+
+      if (element.className){  // && element.className.indexOf('active') !== -1) { // TAKIT: Removed, see suggestion below
+        if (element.classList.contains('active')) // TAKIT: Suggestion: Easier, and better readability!
+          element.classList.remove("active");
+      }
+    })
+    this.classList.add("active"); // TAKIT: Suggestion instead of this.className += " active";
+  });
+}
+// -----------------END OF STYLING ELEMENT-----------------
+
+
+// -----------------START OF LOGIC ELEMENT-----------------
+
+
+const map = new Map();
+// register item element as a key and object with corresponding description / image as value
+map.set(item1, {
+  desc: 'Polüpropüleen (PP) on üks tööstuses kõige sagedamini kasutatavaid polümeere. Selle suur paindlikkus, uskumatu vastupidavus, väike kaal ja vastupidavus kemikaalidele on tähendanud, et see on leidnud lugematuid rakendusi alates meditsiinist kuni autotööstuse ja pakenditööstuseni. Fiberlogy PP filament on ära kasutanud selle uskumatu materjali potentsiaali ja võimaldanud seda kasutada 3D-printimisel.',
+  img: 'img/PP.png'
+});
+map.set(item2, {
+  desc: 'Tänu vastupidavusele kõrgetele temperatuuridele, alkoholidele ja kemikaalidele on nailon eriti kasulik mehaaniliste ja tehniliste rakenduste jaoks. See on äärmiselt vastupidav, tugev ja purunematu. See on kergesti töödeldav metallitöötluseks mõeldud tööriistadega ja see on ka kergesti värvitav, mis muudab selle veelgi mitmekülgsemaks ja funktsionaalsemaks See on uskumatult tugev – enne purunemist paindub see 50%. Siiski ei ole see vastupidav kontsentreeritud leeliste ja hapete suhtes.',
+  img: 'img/nylonPa.png'
+});
+map.set(item3, {
+  desc: 'NYLON PA12 + CF on veel üks filament PA12 tehniliste võimaluste loetelus, mida on tugevdatud süsinikkiudude lisamisega 5% ja 15%. Seda iseloomustab kõrge termiline vastupidavus ja vähem kokkutõmbumist võrreldes modifitseerimata nailon PA12-ga. Süsinikkiu lisamine võimaldab komponendi kaalu vähendada, säilitades selle kõrge konstruktsiooni jäikuse. PA12 + CF-l on mitmesuguseid rakendusi kogu tööstuses, sealhulgas autotööstuses ja masinaehitussektoris, pakkudes täiustatud prototüüpide, droonide ja lõpptoodete loomist, mis nõuavad suuremat vastupidavust, vähendades samal ajal nende kaalu.',
+  img: 'img/Pa12.png'
+});
+map.set(item4, {
+  desc: 'EASY PET-G on mõeldud neile, kes otsivad 3D-printimise lihtsust koos funktsionaalsete ja esteetiliste väärtustega. Glükooli lisamisega rikastatud PET tagab kõrge vastupidavuse mehaanilistele, keemilistele ja atmosfäärilistele teguritele ning selle kõrge amorfsus koos väga hea vooluga võimaldab saada suurema läbipaistvuse ja kihtide parema sidumisega prindid. Ülaltoodud omadused muudavad EASY PET-G suurepärase kombinatsiooni traditsioonilise PET-G tugevusest ja EASY PLA lihtsusest ja ennustatavusest, mida 3D-printeri kasutajad hindavad.',
+  img: 'img/EASYPet.png'
+});
+
+map.set(item5, {
+  desc: 'ROSA3D poolt valmistatud ASA-filament (akrüülnitriil-stüreen-akrüül) on UV-kindel, niiskuskindel ja kuumuskindel polümeer. ASA UV-vastupidavus muudab selle ideaalseks materjaliks välistingimustes kasutamiseks, mis on intensiivselt avatud päikese ja erinevate ilmastikutingimuste käes. ASA sobib siis, kui vajate tõhusat materjali, mis põhjustab vähem printimisprobleeme kui ABS. Filamendil on madalam kokkutõmbumisaste ja tekitatud lõhn on palju vähem tajutav. ASA väljatrükkide pehmenemispunkt on kõrgem kui PLA ja PETG, temperatuuril kuni 94 ° C pole deformatsiooni märke. ASA erakordsed mehaanilised ja termilised omadused ning suurepärane vastupidavus UV-kiirgusele muudavad selle täiuslikuks materjaliks ja ABS alternatiiv kasutamiseks auto- ja meretööstuses ning välistingimustes, näiteks peegelkorpuste, katete, radiaatorikatete ja andurite korpuste jaoks',
+  img: 'img/ASA.jpeg'
+});
+map.set(item6, {
+  desc: 'ROSA3D PET-G Standard filament pakub lihtsat printimist, mis on võrreldav PLA-ga. See on pühendatud kasutajatele, kes tegelevad nii amatöör- kui ka professionaalse 3D-printimisega. PET-G standardi abil valmistatud detaile iseloomustab suur täpsus, haardumine lauaga, lõhna puudumine ja vähene kokkutõmbumine. PET-G standardi väljatrükkidel on tugev keemiline vastupidavus. Neid saab liivapritsiga puurida, saagida, lihvida, lõigata või värvida, ilma et nende terviklik struktuur oleks kahjustatud. PET-G standardi filament on toodetud toidukvaliteediga materjalidest vastavalt Euroopa Liidu ja FDA määrustele.',
+  img: 'img/PET-Gstandard.jpeg'
+});
+map.set(item7, {
+  desc: 'ROSA3D kõrgekvaliteediline filament PET-G Premium oli loodud vastama tööstuse kõige nõudlikumatele vajadustele. Seda iseloomustab suurepärane kihi haardumine ja see võimaldab peaaegu horisontaalset printimist suure kaldenurgaga (75 °) ilma tugede kasutamiseta. Tugevad kihid kihtide vahel loovad väljatrüki vertikaalsete külgseinte täiesti sileda pinna. Tänu kvaliteetsele kihtide liimimisele on PET-G Premium väljatrükid väga vastupidavad, mis tähendab, et neid saab pärast printimist ka mitmesuguste mehaaniliste töötlusprotsessidega, sealhulgas lihvimise ja tükeldamisega. Materjalil on silmapaistvalt madal kahanemine ja madal deformatsioonitundlikkus jahtumisel; see võimaldab hõlpsat ja puhast printimist ilma ebameeldiva lõhnata. Ülaltoodud eelised muudavad meie PET-G Premium täiuslikuks tööriistaks suuremate objektide printimiseks - aga ka kergemate, õhukese seinaga väljatrükkide jaoks ja prototüüpide valmistamiseks.',
+  img: 'img/Pet-GPremium.jpeg'
+});
+map.set(item8, {
+  desc: 'Rosa3D toodetud PET-G + CF filament oli mõeldud masinate konstruktsioonielementide ja liikuvate osade printimiseks, kus on vaja suuremat vastupidavust ja kuumakindlust. PET-G + CF väljatrükkidele on iseloomulik vähene vormimise kokkutõmbumine, need on lõhnatud ja omavad kihtide vahel väga tugevat sidet. Materjalil on grafiit, matt pind ja sile, peaaegu satiinist struktuur ning seda on suhteliselt lihtne printida. Vormi vähene kokkutõmbumine võimaldab printida avatud seadmes. PET-G + CF filamendil on tugev keemiline vastupidavus ja süsinikkiu lisamine suurendab selle mehaanilist ja soojuslikku vastupidavust ning löögitugevust, mis tagab selle materjali universaalse kasutamise.',
+  img: 'img/Petg+cf.jpeg'
+});
+
+// you can bind on click handler for example
+const list = document.querySelectorAll('ol'); // TAKIT: Modified to return multiple elements
+list.forEach(function() { // TAKIT: Added to manage the multiple elements
+  this.addEventListener('click', event => {
+    // if element that was registered in our map triggered the event
+    if (map.has(event.target)) {
+      var wrapper = event.target.closest('.wrapper'); // TAKIT: Get parent wrapper
+      // change text of description area
+      wrapper.querySelector('.description').textContent = map.get(event.target).desc; // TAKIT: Modified
+      // change src of the image
+      wrapper.querySelector('img').src = map.get(event.target).img; // TAKIT: Modified
+    }
+  });
+});
+
+
+
+// -----------------END OF LOGIC ELEMENT-----------------
+
+</script>
