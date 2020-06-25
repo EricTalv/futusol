@@ -37,7 +37,7 @@
 
     <ul class="navbar-nav mr-2 ml-0">
       <li class="nav-item text-uppercase">
-        <a class="nav-link" href="https://futu.futusol.eu/" target="_blank"><h7>Andmebaas</h7></a>
+        <a class="nav-link btn btn-primary text-white" href="https://futu.futusol.eu/" target="_blank"><h7>Andmebaas</h7></a>
       </li>
     </ul>
   </div>
@@ -50,11 +50,11 @@
     <div class="h-100 d-flex justify-content-center align-items-center
       flex-column">
 
-      <main role="main" class="container text-white text-center">
+      <main role="main" class="container text-white">
         <div class="tab-content">
-          <div class="tab-pane active" id="futusol">
-            <h1>Futusol</h1>
-            <p class="lead"><b>Futusol oü alustas tegevust 2018 aastal. Firma
+          <div class="tab-pane active  text-center" id="futusol">
+            <h1 style="font-size: 50px;">Futusol</h1>
+            <p class="lead "><b>Futusol oü alustas tegevust 2018 aastal. Firma
                 tegevuseks on 3D printimine, skanneerimine ning 3D
                 modelleerimine. 2019 aastal alustati koostööd kahe
                 filamenditootjaga, et oleks võimalikult suur valik erinevaid
@@ -113,7 +113,7 @@
                         <div class="image">
                           <img src="img/FiberologyLogo.jpg" alt="">
                         </div>
-                        <div class="description">
+                        <div class="description text-center">
                           Fiberlogy asutati ja tegutseb Poolas . Oleme uhked, et
                           saame osa rahvusvahelisest tehnoloogilisest
                           revolutsioonist. Kaasaegne tootmisliin ja meie
@@ -187,7 +187,7 @@
                         <div class="image">
                           <img src="img/RosaLogo.jfif" alt="">
                         </div>
-                        <div class="description">
+                        <div class="description  text-center">
                           Olen 3D-printimiseks mõeldud filamentide tootja
                           Poolas. Nende peamine prioriteet on luua fenomenaalse
                           kvaliteediga tooteid, mis sobivad tööstuslikuks,
@@ -215,9 +215,9 @@
 
           </div>
 
-          <div class="tab-pane" id="tutvustus">
-            <h1>Tutvustus</h1>
-            <p class="lead">Futusol alustas tegevust 2018 aastal, oleme arenev
+          <div class="tab-pane text-center" id="tutvustus">
+            <h1 style="font-size: 50px;">Tutvustus</h1>
+            <p class="lead"><b>Futusol alustas tegevust 2018 aastal, oleme arenev
               ettevõte, kelle põhitegevusalaks on 3D skaneerimine ja 3D
               printimine. Tagamaks kvaliteeti alustasime koostööd Fiberlogy
               filamentide tootjaga, kelle põhilisteks arengusuudadeks on
@@ -225,12 +225,14 @@
               on alles algusjärgus ning pidevalt arenev valdkond. Meie
               eesmärgiks on pakkuda koostöös klientidega parimaid lahendusi. Iga
               kliendiga tegeletakse personaalselt leidmaks parim lahendus just
-              temale. Igale probleemile on olemas lahendus!!</p>
+              temale. Igale probleemile on olemas lahendus!!</b></p>
           </div>
           <div class="tab-pane" id="teenused">
-            <h1>Teenused</h1>
-            <div class="lead">
-              Pakume erinevaid 3D teenuseid
+            <div class="text-center">
+              <h1>Teenused</h1>
+              <div class="lead">
+                Pakume erinevaid 3D teenuseid
+              </div>
             </div>
             <div class="teenused-container container" style="color: white;">
               <div class="row">
@@ -245,9 +247,9 @@
                     </div>
                     <div class="image-container">
                       <div class="image">
-                        <img src="img/futusollogo.png" style="margin-top:100px; padding-bottom: 50px;" >
+                        <img src="img/futusollogo.png"  width="300px" style="z-index: 4; margin-top: 150px; max-width: none; max-height: none;"> 
                       </div>
-                      <div class="description">
+                      <div class="description text-center" style="padding-top: 140px;">
                         Meie Teenused
                       </div>
                     </div>
@@ -261,8 +263,8 @@
 
           </div>
           <div class="tab-pane" id="kontakt">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-sm mx-auto">
+            <div class="row justify-content-center align-items-center" style="color: black; background-color: white; border-radius: 20px;">
+              <div class="col-sm mx-auto text-center ">
                 <h1>Kontakt</h1>
                 <p><b>Futusol OÜ</b></p>
                 <p>Reg NR: 14563451</p>
@@ -364,12 +366,8 @@ header,
 .list ol {
   list-style: none;
   padding: 0;
+  padding-left: 20px;
   margin: 0;
-}
-
-.list li {
-  width: 100%;
-  margin-right: 20px;
 }
 
 .list li:hover,
